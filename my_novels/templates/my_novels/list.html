@@ -1,0 +1,18 @@
+{% extends 'base_template.html' %}
+
+{% block title %}Novel list{% endblock %}
+
+{% block header %}
+    <div class="header-wrapper">
+        <h1>My Novels</h1>
+        <!-- <a href="" class="btn create-novel">Create new Novel</a> -->
+    </div>
+{% endblock %}
+
+{% block main %}
+    <div class="card-wrapper">
+        {% for novel in novels %}
+            {% include 'my_novels/card.html' with novel=novel %}
+        {% endfor %}
+    </div>
+{% endblock %}

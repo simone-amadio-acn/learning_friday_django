@@ -1,0 +1,77 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local development settings
+local_settings.py
+
+# Database
+db.sqlite3
+
+# Media files
+media/
+
+# Static files
+staticfiles/
+
+# Virtual environment
+venv/
+env/
+
+# Compiled Python files
+*.pyc
+
+# macOS
+.DS_Store
+
+# Editor-specific
+*.sublime-project
+*.sublime-workspace
+.vscode/
+.idea/
+
+# Compiled C extension
+*.so
+
+# Django migration files
+/migrations/
+
+# Ignore environment-specific settings
+.env
+
+# Ignore pipenv virtual environment
+Pipfile
+Pipfile.lock
+
+# Ignore logs
+*.log
+log/
+
+# Ignore test database
+test_db.sqlite3
+
+# Ignore user-specific IDE settings
+/.vscode
+/.idea
+*.code-workspace
+
+# Ignore coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# Ignore poetry
+poetry.lock
+pyproject.toml
+
+# Ignore node_modules
+node_modules/
+
+# Ignore Jupyter notebooks
+*.ipynb_checkpoints/
+
+# Ignore secret key file
+secret_key.txt
+

@@ -1,0 +1,23 @@
+{% extends 'base_template.html' %}
+
+{% block title %}{{novel.title}}{% endblock %}
+
+{% block header %}
+    <div class="header-wrapper">
+        <h1>My Novels</h1>
+    </div>
+{% endblock %}
+
+{% block main %}
+{% load static %}
+<div class="back-to-previous-page-wrapper">
+    <a href="{% url 'my_novels:list' %}" class="back-to-previous-page"> < Page List</a>
+</div>
+<div class="new-novel-form-wrapper">
+    <form class="new-novel-form" action="{% url 'my_novels:create' %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input class="btn create-form-submit" type="submit" value="Create">
+    </form>
+</div>
+{% endblock %}

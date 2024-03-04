@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Default title{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!-- END GOOGLE FONT -->
+</head>
+<body>
+    <header>
+        {% block header %}<h1>Header</h1>{% endblock %}
+    </header>
+
+    <main>
+        {% block main %}{% endblock %}
+    <main>
+
+    <footer>
+    </footer>
+</body>
+</html>
