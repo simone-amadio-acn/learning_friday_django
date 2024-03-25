@@ -2,7 +2,7 @@
 <a class="card" href="{% url 'my_novels:detail' novel.id %}">
     <h2>{{ novel.title }}</h2>
     <div class="genres">
-        {% for genre in novel.genres.all %}
+        {% for genre in novel.genre.all %}
         <div class="genre">{{ genre.name }}</div>
         {% endfor %}
     </div>
