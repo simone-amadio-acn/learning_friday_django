@@ -17,14 +17,14 @@
     <div class="card" href="#">
         <h2>{{novel.title}}</h2>
         <div class="genres">
-            {% for genre in novel.genres.all %}
+            {% for genre in novel.genre.all %}
             <div class="genre">{{genre.name}}</div>
             {% endfor %}
         </div>
         <p>
             {{novel.body}}
         </p>
-        <a href="#"><img class="icon icon-trash delete-novel" src="{% static 'images/trash.svg' %}" /></a>
+        <a href="{% url 'my_novels:delete' novel.id %}"><img class="icon icon-trash delete-novel" src="{% static 'images/trash.svg' %}" /></a>
     </div>
 </div>
 {% endblock %}
